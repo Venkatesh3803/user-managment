@@ -1,0 +1,50 @@
+{
+  "users": [
+    {
+      "profile": "https://res.cloudinary.com/ddsepnnsm/image/upload/v1714296364/vwkhhlug4hzt0e8pogzl.jpg",
+      "id": "07e344ff-4c23-4035-bbce-7b2bebdb4c0f",
+      "firstname": "venkatesh",
+      "lastname": "venky",
+      "email": "venkateshvnky3803@gmail.com",
+      "password": "123456",
+      "conformPassword": "123456",
+      "desc": "my info",
+      "gender": "Male",
+      "state": "Telangana",
+      "city": "Hyderabad",
+      "latitude": "17.491659",
+      "longitude": "\t78.391983",
+      "address": "Lal dharwaja",
+      "admin": true
+    },
+    {
+      "profile": "https://res.cloudinary.com/ddsepnnsm/image/upload/v1714314360/zl2xrfggksybcugi8sqb.jpg",
+      "id": "0a7f41ad-3d88-4a14-bd60-ad724e16a26d",
+      "firstname": "santosh",
+      "lastname": "kumar",
+      "email": "santoshkumar@gmail.com",
+      "password": "123456",
+      "conformPassword": "123456",
+      "state": "Maharashtra",
+      "longitude": "73.856255",
+      "latitude": "\t18.516726",
+      "city": "pune",
+      "address": "hamaliwada",
+      "desc": "santosh, a tech-savvy professional who relies on digital platforms for both work and leisure. As a busy project manager in a leading marketing agency, Sarah juggles multiple responsibilities and relies heavily on efficient and intuitive digital tools to stay organized and productive."
+    },
+    {
+      "profile": "https://res.cloudinary.com/ddsepnnsm/image/upload/v1714315674/xsxpia0k151lkwc47wno.jpg",
+      "id": "f210",
+      "first-name": "pramod",
+      "last-name": "kumar",
+      "email": "pramodkumar@gmail.com",
+      "desc": "my information",
+      "gender": "Male",
+      "address": "sarojini nagar",
+      "state": "Karnataka",
+      "city": "Bangalore",
+      "latitude": "77.580643",
+      "longitude": "77.580643"
+    }
+  ]
+}
