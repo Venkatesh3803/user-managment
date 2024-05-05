@@ -14,7 +14,7 @@
       "city": "Hyderabad",
       "latitude": "17.491659",
       "longitude": "\t78.391983",
-      "address": "Lal dharwaja",
+      "address": "basheerbhag",
       "admin": true
     },
     {
@@ -30,7 +30,8 @@
       "latitude": "\t18.516726",
       "city": "pune",
       "address": "hamaliwada",
-      "desc": "santosh, a tech-savvy professional who relies on digital platforms for both work and leisure. As a busy project manager in a leading marketing agency, Sarah juggles multiple responsibilities and relies heavily on efficient and intuitive digital tools to stay organized and productive."
+      "desc": "santosh, a tech-savvy professional who relies on digital platforms for both work and leisure. As a busy project manager in a leading marketing agency, Sarah juggles multiple responsibilities and relies heavily on efficient and intuitive digital tools to stay organized and productive.",
+      "gender": "Male"
     },
     {
       "profile": "https://res.cloudinary.com/ddsepnnsm/image/upload/v1714315674/xsxpia0k151lkwc47wno.jpg",
@@ -43,8 +44,10 @@
       "address": "sarojini nagar",
       "state": "Karnataka",
       "city": "Bangalore",
-      "latitude": "77.580643",
-      "longitude": "77.580643"
+      "latitude": "12.97194000 ",
+      "longitude": "77.580643",
+      "firstname": "pramod",
+      "lastname": "kumar"
     }
   ]
 }

@@ -127,7 +127,7 @@ const Navber = () => {
                                             </Menu.Item>
                                         </Menu.Items>
                                     </Transition>
-                                </Menu> : <Link to={"/signin"} className='text-white'>Sign In</Link>}
+                                </Menu> : <Link to={"/signin"} className='text-white cursor-pointer'>Sign In</Link>}
                             </div>
                         </div>
                     </div>

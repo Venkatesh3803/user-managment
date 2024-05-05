@@ -244,7 +244,7 @@ const EditPage = () => {
                             </label>
                             <div className="mt-2">
                                 <input
-                                    type="number"
+                                    type="text"
                                     name="latitude"
                                     id="latitude"
                                     autoComplete="latitude"
@@ -261,7 +261,7 @@ const EditPage = () => {
                             </label>
                             <div className="mt-2">
                                 <input
-                                    type="number"
+                                    type="text"
                                     name="longitude"
                                     id="longitude"
                                     autoComplete="longitude"

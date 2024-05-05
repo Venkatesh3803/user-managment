@@ -1,44 +1,42 @@
 import React, { useState } from 'react'
-import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
+import { GoogleMap, Marker, useJsApiLoader } from '@react-google-maps/api';
+
 
 
 const Map = ({ data }) => {
-    const [lat] = useState(data && data.latitude)
-    const [lng] = useState(data && data.longitude)
+    const [map, setMap] = useState(/** @type google.maps.Map */(null))
+    const { isLoaded } = useJsApiLoader({
+        googleMapsApiKey: 'AIzaSyA3thvgR7Kg8S5oUNNcl4jfkRa5WlE6iVw',
+    });
 
-    const mapStyles = {
-        height: "100vh",
-        width: "100%"
-    };
 
     let defaultCenter = {
-        lat: 28.644800,
-        lng: 77.216721
+        lat: parseFloat(data.latitude),
+        lng: parseFloat(data.longitude),
     };
 
-    console.log(typeof (parseFloat(lat), parseFloat(lng)))
+    if (!isLoaded) return <h1>Loading...</h1>
+    return <h1>
 
-    return (
-        <>
-            <LoadScript
-                googleMapsApiKey="AIzaSyA3thvgR7Kg8S5oUNNcl4jfkRa5WlE6iVw"
-            >
-                <GoogleMap
-                    mapContainerStyle={mapStyles}
-                    zoom={10}
-                    center={data !== "" ? [parseFloat(lat), parseFloat(lng)] : defaultCenter}
-                >
-                    {/* Child components, such as markers, can be added here */}
-                    <Marker
-                        position={[data.latitude, data.longitude]}
-                        title={"myname"}
-                    />
-                </GoogleMap>
-            </LoadScript>
+        <GoogleMap
+            center={defaultCenter}
+            zoom={15}
+            mapContainerStyle={{ width: '100%', height: '100vh' }}
+            options={{
+                zoomControl: false,
+                streetViewControl: false,
+                mapTypeControl: false,
+                fullscreenControl: false,
+            }}
+            onLoad={map => setMap(map)}
+        >
+            <Marker position={defaultCenter} />
+            {/* Map components, such as markers, can be added here */}
+        </GoogleMap >
 
 
-        </>
-    );
+    </h1>
+
 };
 
 

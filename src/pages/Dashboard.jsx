@@ -76,7 +76,7 @@ const Dashboard = () => {
                                             {user.gender}
                                         </p>
                                     </td>
-                                    <td className="px-6 py-4">{user.desc}</td>
+                                    <td className="px-6 py-4">{user.desc.slice(0,100)}...</td>
                                     <td className="px-6 py-4">{user.address}</td>
                                     <td className="px-6 py-4">
                                         <div className="flex gap-2">
